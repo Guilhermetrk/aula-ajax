@@ -1,0 +1,67 @@
+<html>
+
+<head>
+	<title>Aula de JS</title>
+
+	<meta http-equiv="Content-Type" content="text/html;charset=utf-8">
+
+	<script type="text/javascript" src="exec2.js">		
+	</script>
+
+	<style>
+		.selecionado {
+			background-color: yellow;
+		}
+
+		#letreiro {
+			border: 1px solid;
+			padding: 8px;
+			margin: 10px 0;
+			background-color: #636363;
+			color: yellow;
+			font-family: monospace;
+			font-size: xx-large;
+			width: 300px;
+			height: 25px;
+			overflow: hidden;
+			white-space:nowrap;
+		}
+	</style>
+
+</head>
+
+<body>
+	<h1>Exercícios</h1>
+
+	<input type="text" id="palavra" />
+	<button onclick="pesquisar()">Pesquisar</button>
+
+	<div id="texto">
+		<p>A população ela precisa da Zona Franca de <span class="selecionado">Manaus</span>, porque na Zona franca de Manaus, não é uma zona de exportação, é uma
+			zona para o Brasil. Portanto ela tem um objetivo, ela evita o desmatamento, que é altamente lucravito. Derrubar arvores
+			da natureza é muito lucrativo!</p>
+
+		<p>A única área que eu acho, que vai exigir muita atenção nossa, e aí eu já aventei a hipótese de até criar um ministério.
+			É na área de... Na área... Eu diria assim, como uma espécie de analogia com o que acontece na área agrícola.</p>
+
+		<p>No meu xinélo da humildade eu gostaria muito de ver o Neymar e o Ganso. Por que eu acho que.... 11 entre 10 brasileiros
+			gostariam. Você veja, eu já vi, parei de ver. Voltei a ver, e acho que o Neymar e o Ganso têm essa capacidade de fazer
+			a gente olhar.</p>
+
+		<p> você fala o seguinte: "- Mas vocês acabaram isso?" Vou te falar: -"Não, está em andamento!" Tem obras que "vai" durar pra
+			depois de 2010. Agora, por isso, nós já não desenhamos, não começamos a fazer projeto do que nós "podêmo fazê"? 11, 12,
+			13, 14... Por que é que não?</p>
+	</div>
+
+
+	<h2>Painel do Bus</h2>
+
+	<div id="letreiro">
+		Próxima parada Estação Central - Cuidado com o pessoal de Colombo
+	</div>
+	<button onclick="liga()">Ligar</button>
+	<button onclick="desliga()">Desliga</button>
+
+</body>
+
+</html>
