@@ -32,6 +32,15 @@
         table th{
             background-color: silver;
         }
+
+        #msg-erro{
+            color: red;
+            border: 1px solid;
+            padding: 4px;
+            margin: 4px;
+            background-color: pink;
+            display: none;
+        }
     </style>
 
 </head>
@@ -40,16 +49,19 @@
     <h1>Agenda</h1>
     
     <fieldset class="form">
+
+        <div id="msg-erro">Mensagem de erro</div>
+
         <label>Nome</label>
-        <input type="text" id="nome"/>
+        <input type="text" id="nome" />
         <br>
 
         <label>Telefone</label>
-        <input type="text" id="telefone"/>
+        <input type="text" id="telefone" />
         <br>
 
         <label>Email</label>
-        <input type="text" id="email"/>
+        <input type="text" id="email" />
         <br>
 
         <button onclick="gravar()">Gravar</button>
