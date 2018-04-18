@@ -1,0 +1,92 @@
+<html>
+
+<head>
+	<title>Aula de JS</title>
+
+	<meta http-equiv="Content-Type" content="text/html;charset=utf-8">
+    <script type="text/javascript" src="jquery-3.3.1.js" ></script>
+    <script type="text/javascript" src=clientes.js ></script>		
+    
+    <style>
+        fieldset{
+            width: 400px;
+        }
+        label{
+            width: 125px;
+            display: inline-block;
+        }
+        label:nth-of-type(2){
+            color: red;
+        }
+        fieldset button{
+            float: right;
+        }
+        table{
+            width: 500px;
+            margin-top: 20px;
+            border: 1px solid;
+            border-collapse: collapse; 
+        }
+        table td, table th{
+            border: 1px solid;
+            padding: 4px;
+        }
+        table th{
+            background-color:darkgrey;
+            color: black;
+        }
+        fieldset + button{
+            color: blue;
+        }
+
+    </style>
+
+    <fieldset>
+        <legend>Dados do Cliente</legend>
+
+        <label>Nome</label>
+        <input type="text" name="nome" />
+        <br>
+
+        <label>Email</label>
+        <input type="text" name="Email" />
+        <br>
+
+        <label>CEP</label>
+        <input type="text" name="CEP" />
+        <br>
+
+        <label>Data de Nacimento</label>
+        <input type="text" name="data-nasc" />
+        <br>
+
+        <button>Adicionar</button>
+
+    </fieldset>
+
+    <button>Carregar</button>
+    <table>
+        <thead>
+            <tr>
+                <th>nome</th>
+                <th>Email</th>
+                <th>CEP</th>
+                <th>Data</th>
+            </tr>
+        </thead>
+
+        <tbody>
+            <tr>
+                <td>Edir</td>
+                <td>prof@prof.com</td>
+                <td>12345-123</td>
+                <td>02/02/2010</td>
+            </tr>
+        </tbody>
+    </table>
+   
+
+
+</body>
+
+</html>

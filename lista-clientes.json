@@ -1,0 +1,15 @@
+[
+{
+    "nome": "Edir",
+    "cep": "12345-123",
+    "email": "prof@prof.com",
+    "dataNasc": "10/10/2010"
+},
+{
+    "nome": "Jose",
+    "cep": "12122-123",
+    "email": "jose@prof.com",
+    "dataNasc": "02/02/2002"
+}
+
+]
