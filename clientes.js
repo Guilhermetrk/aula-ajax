@@ -36,16 +36,25 @@ $(function() {
         var cep = $("input[name=cep]").val();
         var dataNasc = $("input[name=data-nasc]").val();
 
-        var tr = '<tr>'
-                +'<td>'+ nome +'</td>'
-                +'<td>'+ email +'</td>'
-                +'<td>'+ cep +'</td>'
-                +'<td>'+ dataNasc +'</td>'
-                +'</tr>';
+        var form = {
+            "nome": nome,
+            "email": email,
+            "cep": cep,
+            "dataNasc": dataNasc
+        };
 
-        var tr2 = $(tr).hide().fadeIn(2000);
+        $.post('/clientes.php', form);
+        
+        //var tr = '<tr>'
+               // +'<td>'+ nome +'</td>'
+                //+'<td>'+ email +'</td>'
+               // +'<td>'+ cep +'</td>'
+               // +'<td>'+ dataNasc +'</td>'
+                //+'</tr>';
 
-         $("tbody").append(tr2);
+       // var tr2 = $(tr);
+
+         //$("tbody").append(tr2);
 
    }); // fim do click
 
